@@ -1,0 +1,8 @@
+<nb-card>
+  <nb-card-header><app-search></app-search></nb-card-header>
+  <nb-card-body>
+    <h1>게시판</h1>
+    <ng2-smart-table [settings]="settings" [source]="data"
+    (userRowSelect)="detail($event)"></ng2-smart-table>
+  </nb-card-body>
+</nb-card>
